@@ -1,0 +1,12 @@
+@import "../CommonStyles.css";
+
+.quick-link {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    text-decoration: underline;
+}
+
+.quick-link:hover {
+    color: #61d4b3;
+}

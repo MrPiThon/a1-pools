@@ -1,0 +1,18 @@
+.hero {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.hero a {
+    background-color: #61d4b3;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.hero a:hover {
+    background-color: #004f7c;
+    transform: scale(1.05);
+    color: white;
+}

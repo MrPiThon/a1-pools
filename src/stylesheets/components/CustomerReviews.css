@@ -1,0 +1,44 @@
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.review-item {
+    flex: 1 1 calc(33.333% - 10px);
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+    background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    margin: 20px 0;
+    color: #003366;
+    font-family: Arial, sans-serif;
+}
+
+.review-stars {
+    color: gold;
+    font-size: 1.5em;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.review-item p {
+    margin: 10px 0;
+}
+
+.review-item p:last-child {
+    font-size: 0.9em;
+    color: #213547;
+}

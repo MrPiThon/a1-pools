@@ -1,0 +1,45 @@
+.services {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.services h1 {
+    color: #003366;
+}
+
+.services h2 {
+    font-size: 2.5em;
+    color: #003366;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    background-color: #61d4b3;
+    background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    font-size: 1.8em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    color: #333;
+}
