@@ -1,5 +1,5 @@
 import React from 'react';
-import reviews from '/public/data/customer-reviews.json';
+import reviews from '/src/data/customer-reviews.json';
 import '../stylesheets/components/CustomerReviews.css';
 
 const CustomerReviews = ({ numReviews }) => {
