@@ -42,3 +42,14 @@
     font-size: 0.9em;
     color: #213547;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .review-container {
+        flex-direction: column;
+    }
+
+    .review-item {
+        flex: 1 1 100%;
+    }
+}

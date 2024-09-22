@@ -9,3 +9,16 @@ hr {
     margin: 3rem auto;
     border: 5px groove #61d4b3;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    hr {
+        margin: 2rem auto;
+        border-width: 3px;
+    }
+}

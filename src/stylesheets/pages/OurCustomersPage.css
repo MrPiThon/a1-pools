@@ -69,3 +69,14 @@
         transform: rotate(360deg);
     }
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .photo-collage {
+        flex-direction: column;
+    }
+
+    .photo-item {
+        flex: 1 1 100%;
+    }
+}

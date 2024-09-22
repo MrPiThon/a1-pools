@@ -9,9 +9,6 @@ body {
     min-height: 100vh;
     background-color: #004f7c;
     background-image: url("https://www.transparenttextures.com/patterns/snow.png");
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
     color: #ffffff;
     min-width: 320px;
 }
@@ -25,4 +22,16 @@ main {
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    main {
+        padding: 10px;
+    }
 }

@@ -10,3 +10,10 @@
 .quick-link:hover {
     color: #61d4b3;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .quick-link {
+        font-size: 0.9em;
+    }
+}

@@ -43,3 +43,81 @@
     font-size: 1.1em;
     color: #333;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .services {
+        padding: 20px 10px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .services h2 {
+        font-size: 2em;
+    }
+
+    .service-item {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .service-item h3 {
+        font-size: 1.5em;
+    }
+
+    .service-item p {
+        font-size: 1em;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .services {
+        padding: 40px 15px;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .services h2 {
+        font-size: 2.2em;
+    }
+
+    .service-item {
+        padding: 18px;
+        margin: 15px;
+    }
+
+    .service-item h3 {
+        font-size: 1.6em;
+    }
+
+    .service-item p {
+        font-size: 1.05em;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .services {
+        padding: 50px 20px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .services h2 {
+        font-size: 2.5em;
+    }
+
+    .service-item {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .service-item h3 {
+        font-size: 1.8em;
+    }
+
+    .service-item p {
+        font-size: 1.1em;
+    }
+}

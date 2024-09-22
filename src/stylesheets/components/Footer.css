@@ -47,3 +47,15 @@ footer p > a:hover {
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    footer .quick-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .quick-links a {
+        padding: 5px 0;
+    }
+}

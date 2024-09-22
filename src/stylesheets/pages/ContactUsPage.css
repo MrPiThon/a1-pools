@@ -1,2 +1,68 @@
 @import "../CommonStyles.css";
 
+.container {
+    margin: 2% auto 0;
+    padding: 20px;
+    width: 45rem;
+    background-color: var(--background-color);
+    background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container input,
+.container textarea {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.container button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 2em;
+    }
+
+    .container input,
+    .container textarea {
+        font-size: 0.9em;
+    }
+
+    .container button {
+        font-size: 1em;
+    }
+}

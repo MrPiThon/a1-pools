@@ -16,3 +16,16 @@
     transform: scale(1.05);
     color: white;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .hero {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .hero a {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}

@@ -54,3 +54,36 @@
     margin-right: 20px; /* Adjusted margin */
     padding: 5px;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+        padding: 5px 10px; /* Reduced padding */
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        align-items: center; /* Center links horizontally */
+    }
+
+    .navbar-item {
+        width: 100%;
+        text-align: center; /* Center text within each item */
+    }
+
+    .navbar-item a {
+        display: block;
+        width: 100%;
+        padding: 5px 0; /* Reduced padding */
+        font-size: 0.9em; /* Reduced font size */
+    }
+
+    .logo {
+        font-size: 1.8em; /* Reduced font size */
+        border: none;
+    }
+}

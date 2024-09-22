@@ -62,9 +62,11 @@
     border-bottom-color: var(--primary-color);
 }
 
+/* Mobile styles */
 @media (max-width: 600px) {
     .content {
         padding: 15px;
+        width: 90%;
     }
 
     .content h1 {
