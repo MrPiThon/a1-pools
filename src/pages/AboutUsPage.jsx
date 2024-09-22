@@ -1,22 +1,6 @@
 import "../stylesheets/pages/AboutUsPage.css"
-import React, { useEffect } from 'react';
-import ContactForm from "../components/ContactForm";
 
 const AboutUsPage = () => {
-    useEffect(() => {
-        if (window.location.hash === '#contact-form') {
-            const element = document.getElementById('contact-form');
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        } else if (window.location.hash === '#about-us-top') {
-            const element = document.getElementById('about-us-top');
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    }, []);
-
     return (
         <div className="container" id="about-us-top">
             <div className="content">
@@ -35,9 +19,6 @@ const AboutUsPage = () => {
                     <li>Water quality testing and treatment</li>
                 </ul>
             </div>
-
-            <h1>Contact Us</h1>
-            <ContactForm actionUrl="https://formspree.io/f/mnnaykyj"/>
         </div>
     );
 }

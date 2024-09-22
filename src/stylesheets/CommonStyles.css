@@ -4,3 +4,8 @@
     padding: 20px;
     box-sizing: border-box;
 }
+
+hr {
+    margin: 3rem auto;
+    border: 5px groove #61d4b3;
+}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Hero from '../components/Hero';
 import CustomerPhotos from "../components/CustomerPhotos.jsx";
 import CustomerReviews from "../components/CustomerReviews.jsx";
@@ -11,15 +9,15 @@ const HomePage = () => {
     return (
         <div className="container">
             <Hero/>
-
-            <Services />
-
+            <hr/>
+            <Services/>
+            <hr/>
             <h1>Featured Pools</h1>
-            <CustomerPhotos numPhotos={3} />
+            <CustomerPhotos numPhotos={3}/>
             <a className="quick-link" href="/our-customers">View all pools</a>
-
+            <hr/>
             <h1>Featured Reviews</h1>
-            <CustomerReviews numReviews={3} />
+            <CustomerReviews numReviews={3}/>
         </div>
     );
 };
