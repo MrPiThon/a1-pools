@@ -3,7 +3,7 @@ import '../stylesheets/components/Hero.css';
 const Hero = () => {
     return (
         <div className="hero">
-            <img src="/public/assets/A1 Pool Hero Animated.gif" alt="Hero Image"/>
+            <img src="/assets/A1 Pool Hero Animated.gif" alt="Hero Image"/>
             <div className="hero-content">
                 <h1>Still Local, <br/>Still Right</h1>
                 <p>Done Local, Done Right</p>
