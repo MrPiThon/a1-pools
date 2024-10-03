@@ -6,7 +6,6 @@ const Footer = () => {
         <footer className="transition">
             <div className="quick-links transition">
                 <a href="/">Home</a>
-                <a href="/about-us">About Us</a>
                 <a href="/contact-us">Contact Us</a>
                 <a href="/our-customers">Our Customers</a>
             </div>

@@ -3,10 +3,12 @@ import '../stylesheets/components/Hero.css';
 const Hero = () => {
     return (
         <div className="hero">
-            <img src="/public/assets/user.svg" alt="Hero Image"/>
-            <h1>A1 Pools</h1>
-            <p>Your local pool company</p>
-            <a href="/contact-us">Get a quote!</a>
+            <img src="/public/assets/A1 Pool Hero Animated.gif" alt="Hero Image"/>
+            <div className="hero-content">
+                <h1>Still Local, <br/>Still Right</h1>
+                <p>Done Local, Done Right</p>
+                <a href="/contact-us">Get a quote!</a>
+            </div>
         </div>
     );
 }

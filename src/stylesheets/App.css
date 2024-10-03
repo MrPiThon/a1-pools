@@ -2,37 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
 
 body {
-    padding: 1%;
     font-family: "Boogaloo", sans-serif;
     font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #004f7c;
-    background-image: url("https://www.transparenttextures.com/patterns/snow.png");
+    justify-content: center;
+    background-color: #63666a;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
     color: #ffffff;
     min-width: 320px;
+    transition: all 0.3s ease;
 }
 
 main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 /* Mobile styles */
 @media (max-width: 600px) {
     body {
         font-size: 1em;
-        padding: 2%;
+        margin: 2%;
     }
 
     main {
-        padding: 10px;
+        margin: 2%;
     }
 }

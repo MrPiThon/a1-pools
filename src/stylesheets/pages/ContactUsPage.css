@@ -1,49 +1,51 @@
-@import "../CommonStyles.css";
-
 .container {
-    margin: 2% auto 0;
     padding: 20px;
-    width: 45rem;
-    background-color: var(--background-color);
-    background-image: url("https://www.transparenttextures.com/patterns/transparent-square-tiles.png");
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    justify-content: center;
+}
+
+.wrapper {
+    padding: 100px 0;
+    display: flex;
+    min-height: calc(100% - 607px - 60px);
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container h1 {
     font-size: 2.5em;
-    color: var(--primary-color);
-    margin-bottom: 20px;
+    text-align: center;
+    margin: 0;
 }
 
-.container form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.widgets {
+    margin-top: 20vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    font-family: "SUSE", sans-serif;
 }
 
-.container input,
-.container textarea {
-    padding: 10px;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    font-size: 1em;
+.widget {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: left;
 }
 
-.container button {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+h1.widgetTitle {
+    margin: 0;
+    padding: 0;
+    color: #61d4b3;
+    font-size: .55em;
+    text-align: left;
 }
 
-.container button:hover {
-    background-color: var(--primary-color);
+.widget p {
+    font-size: .95em;
+    margin: 0;
+    padding: 0;
 }
 
 /* Mobile styles */

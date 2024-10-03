@@ -1,31 +1,32 @@
 .services {
-    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
-    background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
     padding: 50px 20px;
     text-align: center;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.services h1 {
-    color: #003366;
-}
-
 .services h2 {
     font-size: 2.5em;
-    color: #003366;
     margin-bottom: 30px;
 }
 
+.service-items {
+    display: flex;
+    flex-direction: row;
+}
+
 .service-item {
-    background-color: #61d4b3;
+    background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
 }
 
 .service-item:hover {

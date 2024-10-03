@@ -1,16 +1,18 @@
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space between logo and links */
-    align-items: center; /* Center items vertically */
-    background-color: #004f7c;
-    background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
-    border-radius: 5px;
-    padding: 20px 30px; /* Increased padding */
-    border: 1px solid #ffffff;
-    border-top: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: sticky;
+    padding-bottom: 1%;
     top: 0;
     z-index: 1000; /* Ensure it stays above other content */
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #213547;
+    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
 }
 
 .navbar-list {
@@ -21,38 +23,31 @@
     padding: 0;
 }
 
-.navbar-item:not(:first-child) {
-    margin-top: 15px;
+.navbar-item a:first-child {
+    flex-direction: column;
+    justify-content: left;
 }
 
 .navbar-item a {
+    font-size: 1em;
+    flex-direction: row;
     color: #61d4b3;
     text-decoration: none;
+    padding: 0 2vw;
 }
 
 .navbar-item a:hover {
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    text-decoration: underline;
 }
 
 .navbar-item a.active {
     color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+    text-decoration: underline;
 }
 
 .transition {
     transition: all 0.3s ease;
-}
-
-.logo {
-    font-size: 2.2em; /* Increased font size */
-    color: #ffffff;
-    text-decoration: none;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-    border-radius: 5%;
-    margin-right: 20px; /* Adjusted margin */
-    padding: 5px;
 }
 
 /* Mobile styles */

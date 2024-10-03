@@ -7,15 +7,12 @@ import Services from "../components/Services.jsx";
 
 const HomePage = () => {
     return (
-        <div className="container">
+        <div>
             <Hero/>
-            <hr/>
-            <Services/>
-            <hr/>
             <h1>Featured Pools</h1>
             <CustomerPhotos numPhotos={3}/>
             <a className="quick-link" href="/our-customers">View all pools</a>
-            <hr/>
+            <Services/>
             <h1>Featured Reviews</h1>
             <CustomerReviews numReviews={3}/>
         </div>

@@ -1,6 +1,6 @@
-@import "../CommonStyles.css";
-
 .quick-link {
+    display: block;
+    margin: 0 auto;
     text-align: center;
     font-size: 1em;
     color: white;
@@ -9,6 +9,10 @@
 
 .quick-link:hover {
     color: #61d4b3;
+}
+
+h1 {
+    text-align: center;
 }
 
 /* Mobile styles */
