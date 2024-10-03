@@ -5,7 +5,7 @@ const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) { // Adjust the scroll value as needed
+            if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
