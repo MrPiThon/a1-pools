@@ -17,6 +17,7 @@
     color: #003366;
     font-family: "SUSE", sans-serif;
     text-align: center;
+    justify-content: center;
 }
 
 .review-stars {
@@ -43,10 +44,23 @@
     color: #213547;
 }
 
+/* Tablet styles */
+@media (max-width: 1366px) {
+    .review-container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .review-item {
+        flex: 1 1 100%;
+    }
+}
+
 /* Mobile styles */
 @media (max-width: 600px) {
     .review-container {
         flex-direction: column;
+        width: 80%;
     }
 
     .review-item {

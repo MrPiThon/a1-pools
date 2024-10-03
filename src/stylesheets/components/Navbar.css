@@ -56,6 +56,7 @@
         flex-direction: column;
         align-items: center; /* Center items horizontally */
         padding: 5px 10px; /* Reduced padding */
+        position: relative;
     }
 
     .navbar-list {
@@ -73,8 +74,8 @@
     .navbar-item a {
         display: block;
         width: 100%;
-        padding: 5px 0; /* Reduced padding */
-        font-size: 0.9em; /* Reduced font size */
+        padding: 5px 0;
+        font-size: 1em;
     }
 
     .logo {

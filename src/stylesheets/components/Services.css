@@ -45,12 +45,50 @@
     color: #333;
 }
 
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .services {
+        padding: 40px 15px;
+        margin-top: 7%;
+        margin-bottom: 7%;
+    }
+
+    .services h2 {
+        font-size: 2.2em;
+    }
+
+    .service-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-item {
+        padding: 18px;
+        margin: 15px;
+        width: 90%;
+    }
+
+    .service-item h3 {
+        font-size: 1.6em;
+    }
+
+    .service-item p {
+        font-size: 1.05em;
+    }
+}
+
 /* Mobile styles */
 @media (max-width: 600px) {
     .services {
         padding: 20px 10px;
         margin-top: 10%;
         margin-bottom: 10%;
+    }
+
+    .service-items {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
     }
 
     .services h2 {
