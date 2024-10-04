@@ -57,7 +57,7 @@ footer p > a:hover {
         content: "Contact Us";
     }
 
-    footer .quick-links a[href="our-customers"]:before {
+    footer .quick-links a[href="/our-customers"]:before {
         content: "Our Customers";
     }
 }
@@ -69,15 +69,15 @@ footer p > a:hover {
     }
 
     footer .quick-links a[href="/"]:before {
-        content: url("public/assets/icons/home-teal.png");
+        content: url("/public/assets/icons/home-teal.png");
     }
 
     footer .quick-links a[href="/contact-us"]:before {
-        content: url("public/assets/icons/contact-teal.png");
+        content: url("/public/assets/icons/contact-teal.png");
     }
 
     footer .quick-links a[href="/our-customers"]:before {
-        content: url("public/assets/icons/customers-teal.png");
+        content: url("/public/assets/icons/customers-teal.png");
     }
 
     footer .quick-links a {
