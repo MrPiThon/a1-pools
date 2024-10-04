@@ -11,10 +11,24 @@
     animation: slide-in 0.3s ease-in-out;
 }
 
-.navbar.scrolled {
-    animation: slide-in 0.3s ease-in-out;
-    background-color: #213547;
-    background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+.navbar-item a[href="/"]:before {
+    content: "A1";
+}
+
+.navbar-item a[href="/contact-us"]:before {
+    content: "Contact Us";
+}
+
+.navbar-item a[href="/our-customers"]:before {
+    content: "Our Customers";
+}
+
+@media (min-width: 601px) {
+    .navbar.scrolled {
+        animation: slide-in 0.3s ease-in-out;
+        background-color: #213547;
+        background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+    }
 }
 
 .navbar-list {
@@ -65,32 +79,34 @@
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
-        align-items: center; /* Center items horizontally */
-        padding: 5px 10px; /* Reduced padding */
-        position: relative;
+        align-items: center;
+        padding: 0 5px 5px;
     }
 
     .navbar-list {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-        align-items: center; /* Center links horizontally */
+        flex-direction: row;
+        gap: 5vw;
+        border: 5px solid #213547;
+        border-top: none;
+        background-color: #61d4b3;
+        border-radius: 0 0 10px 10px;
     }
 
     .navbar-item {
+        padding-top: 1vh;
         width: 100%;
-        text-align: center; /* Center text within each item */
+        text-align: center;
     }
 
-    .navbar-item a {
-        display: block;
-        width: 100%;
-        padding: 5px 0;
-        font-size: 1em;
+    .navbar-item a[href="/"]:before {
+        content: url("/public/assets/icons/home-dark-blue.png");
     }
 
-    .logo {
-        font-size: 1.8em; /* Reduced font size */
-        border: none;
+    .navbar-item a[href="/contact-us"]:before {
+        content: url("/public/assets/icons/contact-dark-blue.png");
+    }
+
+    .navbar-item a[href="/our-customers"]:before {
+        content: url("/public/assets/icons/customers-dark-blue.png");
     }
 }

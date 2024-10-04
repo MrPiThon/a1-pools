@@ -48,14 +48,39 @@ footer p > a:hover {
     text-decoration: underline;
 }
 
+@media (min-width: 601px) {
+    footer .quick-links a[href="/"]:before {
+        content: "Home";
+    }
+
+    footer .quick-links a[href="/contact-us"]:before {
+        content: "Contact Us";
+    }
+
+    footer .quick-links a[href="our-customers"]:before {
+        content: "Our Customers";
+    }
+}
+
 /* Mobile styles */
 @media (max-width: 600px) {
     footer .quick-links {
-        flex-direction: column;
         align-items: center;
     }
 
+    footer .quick-links a[href="/"]:before {
+        content: url("public/assets/icons/home-teal.png");
+    }
+
+    footer .quick-links a[href="/contact-us"]:before {
+        content: url("public/assets/icons/contact-teal.png");
+    }
+
+    footer .quick-links a[href="/our-customers"]:before {
+        content: url("public/assets/icons/customers-teal.png");
+    }
+
     footer .quick-links a {
-        padding: 5px 0;
+        padding: 1vh 2vw;
     }
 }
